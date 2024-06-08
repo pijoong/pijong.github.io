@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Styles - Suits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe0b2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff3e0;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        main h2 {
+            font-size: 36px;
+            color: #ff6600;
+        }
+
+        .suits-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+            padding: 20px;
+        }
+
+        .suits-item {
+            margin: 15px;
+            margin-top:-5px;
+            text-align: center;
+            width: 200px; 
+            color: #000;
+        }
+
+        .suits-item img {
+            width: 160px;
+            height: 160px;
+
+        }
+
+        .suits-item p {
+            margin: 10px 0;
+        }
+
+        .suits-item .price {
+            font-weight: bold;
+        }
+
+        .view-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .prev-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .prev-button:hover{
+            background-color: black;
+        }
+        .view-button:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="image.png.png" width="120" height="70"></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>SUITS</h2>
+        <div class="suits-section">
+            <br>
+            <div class="suits-item">
+                <img src="suit1.png" alt="Jet Black Suit">
+                <p>Jet Black Suit</p>
+                <p class="price">₱5,599.00</p>
+                <a href="jet.html" class="view-button">View</a>
+            </div>
+            <div class="suits-item">
+                <img src="suit2.png" alt="Herringbone Tweed Suit">
+                <p>Herringbone Tweed Suit</p>
+                <p class="price">₱6,499.00</p>
+                <a href="Herringbone.html" class="view-button">View</a>
+            </div>
+            <div class="suits-item">
+                <img src="suit3.png" alt="Wedding Suit">
+                <p>Wedding Suit</p>
+                <p class="price">₱4,599.00</p>
+                <a href="Wedding.html" class="view-button">View</a>
+            </div>
+            <div class="suits-item">
+                <img src="suit1.1.png" alt="Regular Slim Fit Suit">
+                <p>Regular Slim Fit Suit</p>
+                <p class="price">₱5,000.00</p>
+                <a href="RegSlim.html" class="view-button">View</a>
+            </div>
+            <div class="suits-item">
+                <img src="sui2.2.png" alt="Textured Tuxedo Suit">
+                <p>Textured Tuxedo Suit</p>
+                <p class="price">₱7,899.00</p>
+                <a href="texturedT.html" class="view-button">View</a>
+            </div>
+        </div>
+    </main>
+    <a href="shirt.html" class="prev-button">Previous</a>
+</body>
+</html>
