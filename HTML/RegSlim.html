@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Longsleeve Polo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fbe2c7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+           display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff3e0;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+         nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        
+        }
+        .back {
+            position: absolute;
+            right: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+            color:#ff6600;
+            transition: color 0.3s;
+        }
+
+        .back:hover {
+            color: red;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .slim{
+            flex: 1;
+            margin-left: 50px;
+        }
+        .slim img {
+            width: 450px;
+            height: 450px;
+        }
+        .slim-deets {
+            flex: 1;
+            margin-left:-230px;
+        }
+        .slim-deets h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            margin-right: 40px;
+            color:#ff6600;
+
+
+        }
+        .slim-deets p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .option {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color:black;
+
+
+        }
+        .option span {
+            display: block;
+            margin-bottom: 5px;
+
+        }
+        .price {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .Buy{
+            display: inline-block;
+            margin-top:-10px;
+            padding: 5px 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }   
+        .Buy:hover{
+            background-color: black;
+        }  
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="image.png.png" width="120" height="70">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+         <a class="back" href="suits.html"><u>Back</u></a>
+    </header>
+    <div class="container">
+        <div class="slim">
+            <img src="suit1.1.png" alt="Regular Slim Fit Suit">
+        </div>
+        <div class="slim-deets">
+            <h1>Regular Slim Fit Suit </h1>
+            <p>This suit features high-quality, breathable fabric for comfort and durability, a slim fit design that contours to your body for a sleek, polished look, and stylish details like a single-breasted jacket with notched lapels and flap pockets. Its timeless colors pairs easily with various shirts and ties, and it retains its shape and color through multiple wears, making it perfect for business professionals, special occasions, and everyday elegance. </p><br>    
+            <div class="option">
+                <span><strong>Color:</strong> 
+                    <a href="#">Black</a> 
+                    <a href="#">Cream</a> 
+                    <a href="#">Dark Blue</a> 
+                    
+                </span>
+                <span><strong>Size:</strong> 
+                    <a href="#">S</a> 
+                    <a href="#">M</a> 
+                    <a href="#">L</a> 
+                    <a href="#">XL</a>
+                </span>
+            </div>
+            <div class="price">₱5,000.00</div>
+             <a href="suits.html" class="Buy">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>

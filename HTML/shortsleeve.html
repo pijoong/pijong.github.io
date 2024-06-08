@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Longsleeve Polo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fbe2c7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+           display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff3e0;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+         nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        
+        }
+        .back {
+            position: absolute;
+            right: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+            color:#ff6600;
+            transition: color 0.3s;
+        }
+
+        .back:hover {
+            color: red;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .kor{
+            flex: 1;
+            margin-left: 50px;
+        }
+        .kor img {
+            width: 450px;
+            height: 450px;
+        }
+        .kor-deets {
+            flex: 1;
+            margin-left:-230px;
+        }
+        .kor-deets h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            margin-right: 40px;
+            color:#ff6600;
+
+
+        }
+        .kor-deets p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .option {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color:black;
+
+
+        }
+        .option span {
+            display: block;
+            margin-bottom: 5px;
+
+        }
+        .price {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .Buy{
+            display: inline-block;
+            margin-top:-10px;
+            padding: 5px 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }   
+        .Buy:hover{
+            background-color: black;
+        }  
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="image.png.png" width="120" height="70">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+         <a class="back" href="shirt.html"><u>Back</u></a>
+    </header>
+    <div class="container">
+        <div class="kor">
+             <img src="kor..jpg.png" alt="Korean Short Sleeve Polo">
+        </div>
+        <div class="kor-deets">
+            <h1>Korean Short Sleeve Polo </h1>
+            <p>Elevate your style with our Korean Short Sleeve Polo, designed for the modern, fashion-forward individual. Available in a range of sophisticated colors, this polo features a relaxed fit, a classic collar, and a button-up front for a sleek, contemporary look. Made from lightweight, breathable fabric, it ensures comfort and style, whether you're out on the town or enjoying a casual day out.   </p><br>    
+            <div class="option">
+                <span><strong>Color:</strong> 
+                    <a href="#">Navy Blue</a> 
+                    <a href="#">Peanut Brown</a> 
+                    <a href="#">Khaki</a> 
+                    <a href="#">Black</a> 
+                    
+                </span>
+                <span><strong>Size:</strong> 
+                    <a href="#">S</a> 
+                    <a href="#">M</a> 
+                    <a href="#">L</a> 
+                    <a href="#">XL</a>
+                </span>
+            </div>
+            <div class="price">₱600.00</div>
+           <a href="shirt.html" class="Buy">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>
