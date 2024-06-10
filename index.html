@@ -58,19 +58,39 @@
         main {
             text-align: center;
             padding: 20px;
+            position: relative; /* Added */
+        }
+
+        .welcome-section {
+            text-align: left;
+            display: inline-block;
+            vertical-align: top;
+            width: 60%; /* Adjusted width */
         }
 
         .welcome-section h1 {
             font-size: 110px;
             color: #ff6600;
-            margin-bottom: 10px;
-            text-align: left;
+            margin-bottom: 15px;
         }
 
         .welcome-section p {
             font-size: 40px;
             color: #ff6600;
-            text-align: left;
+        }
+
+        .image-section {
+            display: inline-block;
+            vertical-align: top;
+            width: 500px; 
+            text-align: right; 
+            margin-top: -20px;
+        }
+
+        .image-section img {
+            height: 510px;
+            width: 530px;
+
         }
     </style>
 </head>
@@ -89,6 +109,9 @@
         <div class="welcome-section">
             <h1>Welcome to <br> North Styles!</h1>
             <p>"A style that meets convenience"</p>
+        </div>
+        <div class="image-section">
+            <img src="guy.jpg" alt="Man in a suit">
         </div>
     </main>
 </body>
