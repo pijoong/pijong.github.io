@@ -1,95 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North Styles - Shirts</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffe0b2;
-            margin: 0;
-            padding: 0;
-        }
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>North Styles - Shirts</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #ffe0b2;
+                margin: 0;
+                padding: 0;
+            }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #fff3e0;
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #fff3e0;
+                padding: 10px 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
 
-      
-        nav {
-            flex-grow: 1;
-            text-align: center;
-        }
+          
+            nav {
+                flex-grow: 1;
+                text-align: center;
+            }
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: black;
-            font-size: 20px;
-            font-weight: bold;
-        }
+            nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: bold;
+            }
 
-       nav a:hover{
-            border-top-color:#ff6600;
-            border-bottom-color:#ff6600;
-            color:#ff6600;
-        }
-
-        main {
-            text-align: center;
-            padding: 20px;
-        }
-        main h2{
-          font-size: 36px;
-            color: #ff6600;
-        }
-
-        .shirts-section h2 {
-            font-size: 36px;
-            color: #ff6600;
-        }
-
-        .shirts-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding:20px;
-        }
-
-        .shirt-item {
-            margin: 20px;
+           nav a:hover{
+                color:#ff6600;
+            }
+            .search-bar {
             margin-top: -5px;
             text-align: center;
-            width: 200px;
-            color: #000;
         }
 
-        .shirt-item img {
-            width: 160px;
-            height: 160px;
-            
-
+        .search-bar input[type="text"] {
+            padding: 5px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
-        .shirt-item p {
-            margin: 10px 0;
-        }
-
-        .shirt-item .price {
-            font-weight: bold;
-        }
-        .shirt-item img:hover {
-            transform: scale(1.5);
-        }
-       .view-button {
-            display: inline-block;
-            margin-top: 10px;
+        .search-bar input[type="submit"] {
             padding: 5px 10px;
             font-size: 14px;
             font-weight: bold;
@@ -98,77 +59,149 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            text-decoration: none;
         }
-        .next-button {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #fff;
-            background-color: #ff6600;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .next-button:hover{
+
+        .search-bar input[type="submit"]:hover {
             background-color: black;
         }
-        .view-button:hover{
-            background-color: black;
-        }
-    </style>
-</head>
-<body>
-    <header>
-       <div class="logo"><img src="image.png.png" width="120" height="70"> </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="community.html">Community</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-      <h2>SHIRTS</h2>
-        <div class="shirts-section">
-            <br>
-            <div class="shirt-item">
-                <img src="longsleeve.jpg.png" alt="Casual Long Sleeve Polo">
-                <p>Casual Long Sleeve Polo</p>
-                <p class="price">₱1,300.00</p>
-               <a href="longsleeve.html" class="view-button">View</a>
-            </div>
-            <div class="shirt-item">
-                <img src="poloshirt1.jpg.png" alt="Casual Short Sleeve Polo">
-                <p>Casual Short Sleeve Polo</p>
-                <p class="price">₱599.00</p>
-                 <a href="casual.html" class="view-button">View</a>
-            </div>
-            <div class="shirt-item">
-                <img src="tdhirt.jpg.png" alt="Plain Cotton Shirt">
-                <p>Plain Cotton Shirt</p>
-                <p class="price">₱389.00</p>
-               <a href="cotton.html" class="view-button">View</a>
-            </div>
-            <div class="shirt-item">
-                <img src="kor..jpg.png" alt="Korean Short Sleeve Polo">
-                <p>Korean Short Sleeve Polo</p>
-                <p class="price">₱600.00</p>
-                <a href="shortsleeve.html" class="view-button">View</a>
-            </div>
-            <div class="shirt-item">
-                <img src="green.jpg.png" alt="Long Sleeve Polo Sweater">
-                <p>Long Sleeve Polo Sweater</p>
-                <p class="price">₱845.00</p>
-                <a href="polosweater.html" class="view-button">View</a>
-            </div>
+
+            main {
+                text-align: center;
+                padding: 20px;
+            }
+            main h2{
+              font-size: 36px;
+                color: #ff6600;
+                margin-top: 25px;
+            }
+
+            .shirts-section h2 {
+                font-size: 36px;
+                color: #ff6600;
+            }
+
+            .shirts-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding:20px;
+            }
+
+            .shirt-item {
+                margin: 20px;
+                margin-top: -5px;
+                text-align: center;
+                width: 200px;
+                color: #000;
+            }
+
+            .shirt-item img {
+                width: 160px;
+                height: 160px;
+                
+
+            }
+
+            .shirt-item p {
+                margin: 10px 0;
+            }
+
+            .shirt-item .price {
+                font-weight: bold;
+            }
+            .shirt-item img:hover{
+                transform: scale(1.5);
+
+            }
+
+           .view-button {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 5px 10px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                background-color: #ff6600;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            .next-button {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #fff;
+                background-color: #ff6600;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            .next-button:hover{
+                background-color: black;
+            }
+            .view-button:hover{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+           <div class="logo"><img src="image.png.png" width="120" height="70"> </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="community.html">Community</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-    </main>
-     <a href="suits.html" class="next-button">Next</a>
-</body>
-</html>
+        </header>
+        <main>
+            <div class="search-bar">
+            <form action="search.html" method="get">
+                <input type="text" name="query" placeholder="Search for products...">
+                <input type="submit" value="Search">
+            </form>
+          <h2>SHIRTS</h2>
+            <div class="shirts-section">
+                <br>
+                <div class="shirt-item">
+                    <img src="longsleeve.jpg.png" alt="Casual Long Sleeve Polo">
+                    <p>Casual Long Sleeve Polo</p>
+                    <p class="price">₱1,300.00</p>
+                   <a href="longsleeve.html" class="view-button">View</a>
+                </div>
+                <div class="shirt-item">
+                    <img src="poloshirt1.jpg.png" alt="Casual Short Sleeve Polo">
+                    <p>Casual Short Sleeve Polo</p>
+                    <p class="price">₱599.00</p>
+                     <a href="casual.html" class="view-button">View</a>
+                </div>
+                <div class="shirt-item">
+                    <img src="tdhirt.jpg.png" alt="Plain Cotton Shirt">
+                    <p>Plain Cotton Shirt</p>
+                    <p class="price">₱389.00</p>
+                   <a href="cotton.html" class="view-button">View</a>
+                </div>
+                <div class="shirt-item">
+                    <img src="kor..jpg.png" alt="Korean Short Sleeve Polo">
+                    <p>Korean Short Sleeve Polo</p>
+                    <p class="price">₱600.00</p>
+                    <a href="shortsleeve.html" class="view-button">View</a>
+                </div>
+                <div class="shirt-item">
+                    <img src="green.jpg.png" alt="Long Sleeve Polo Sweater">
+                    <p>Long Sleeve Polo Sweater</p>
+                    <p class="price">₱845.00</p>
+                    <a href="polosweater.html" class="view-button">View</a>
+                </div>
+            </div>
+        </main>
+         <a href="suits.html" class="next-button">Next</a>
+    </body>
+    </html>
