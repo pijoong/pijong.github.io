@@ -35,37 +35,70 @@
             transition: color 0.3s;
         }
 
-        nav a:hover {
-            border-top-color:#ff6600;
-            border-bottom-color:#ff6600;
+        nav a:hover{
             color: #ff6600;
         }
-
-        .shop {
+        .login-form {
             position: absolute;
-            right: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            text-decoration: none;
-            color: black;
-            transition: color 0.3s;
+            right: 0px;
+            width: 20%;
+            height: 30%;
+            top:255px;
+            transform: translateY(-50%);
+            background-color: #fff3e0;
+            padding: 180px;
+            border-radius: 5px;
+            border: 2px solid black;    
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .shop:hover {
-            color: #ff6600;
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom:10px;
+            margin-top: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
+
+        .login-form input[type="submit"] {
+            width: 290px;
+            padding: 10px;
+            background-color: #ff6600;
+            margin-top: 20px;
+            margin-left: 0;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form p{
+            text-align: center;
+            font-size: 28px;
+            font-weight: bolder;
+            font-family: sans-serif;
+            margin-top: -30px;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: black;
+        }
+
 
         main {
             text-align: center;
             padding: 20px;
-            position: relative; /* Added */
+            position: relative; 
         }
 
         .welcome-section {
             text-align: left;
             display: inline-block;
             vertical-align: top;
-            width: 60%; /* Adjusted width */
+            width: 100%; 
         }
 
         .welcome-section h1 {
@@ -79,19 +112,7 @@
             color: #ff6600;
         }
 
-        .image-section {
-            display: inline-block;
-            vertical-align: top;
-            width: 500px; 
-            text-align: right; 
-            margin-top: -20px;
-        }
-
-        .image-section img {
-            height: 510px;
-            width: 530px;
-
-        }
+        
     </style>
 </head>
 <body>
@@ -103,16 +124,21 @@
             <a href="community.html">Community</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <a class="shop" href="shirt.html"><u>SHOP NOW</u></a>
     </header>
     <main>
+        <div class="login-form">
+            <p>LOGIN</p>
+            <form action="shirt.html" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
         <div class="welcome-section">
             <h1>Welcome to <br> North Styles!</h1>
             <p>"A style that meets convenience"</p>
         </div>
-        <div class="image-section">
-            <img src="guy.jpg" alt="Man in a suit">
-        </div>
+        
     </main>
 </body>
 </html>
