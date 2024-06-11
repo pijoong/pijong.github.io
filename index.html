@@ -52,8 +52,8 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .login-form input[type="text"],
-        .login-form input[type="password"] {
+        .login-form input[type="uname"],
+        .login-form input[type="pass"] {
             display: block;
             width: 100%;
             padding: 10px;
@@ -63,27 +63,27 @@
             border-radius: 5px;
         }
 
-        .login-form input[type="submit"] {
-            width: 290px;
-            padding: 10px;
-            background-color: #ff6600;
-            margin-top: 20px;
+        .login-form .btn {
+            padding: 5px;
+            background-color:#ff6600;  
+            margin-top:-10px;
             margin-left: 0;
             color: white;
             font-size: 16px;
-            font-weight: bold;
+            font-weight: bolder;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s; 
         }
-        .login-form p{
+        .login-form h1{
             text-align: center;
             font-size: 28px;
             font-weight: bolder;
             font-family: sans-serif;
             margin-top: -30px;
         }
-        .login-form input[type="submit"]:hover {
+        .login-form .btn:hover {
             background-color: black;
         }
 
@@ -127,12 +127,11 @@
     </header>
     <main>
         <div class="login-form">
-            <p>LOGIN</p>
-            <form action="shirt.html" method="post">
-                <input type="text" name="username" placeholder="Username">
-                <input type="password" name="password" placeholder="Password">
-                <input type="submit" value="Login">
-            </form>
+            <h1>LOGIN</h1>
+                <input type="uname" name="username" placeholder="Username" required>
+                <input type="pass" name="password" placeholder="Password" required>
+                 <a href="shirt.html" class="btn">Login</a> 
+
         </div>
         <div class="welcome-section">
             <h1>Welcome to <br> North Styles!</h1>
