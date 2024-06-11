@@ -37,6 +37,32 @@
         nav a:hover {
             color: #ff6600;
         }
+        .search-bar {
+            margin-top: -5px;
+            text-align: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar input[type="submit"] {
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-bar input[type="submit"]:hover {
+            background-color: black;
+        }
 
         main {
             text-align: center;
@@ -46,6 +72,7 @@
         main h2 {
             font-size: 36px;
             color: #ff6600;
+            margin-top: 25px;
         }
 
         .suits-section {
@@ -79,6 +106,7 @@
         .suits-item img:hover{
             transform: scale(1.5);
         }
+
         .view-button {
             display: inline-block;
             margin-top: 10px;
@@ -127,6 +155,11 @@
         </nav>
     </header>
     <main>
+         <div class="search-bar">
+            <form action="search.html" method="get">
+                <input type="text" name="query" placeholder="Search for products...">
+                <input type="submit" value="Search">
+            </form>
         <h2>SUITS</h2>
         <div class="suits-section">
             <br>
